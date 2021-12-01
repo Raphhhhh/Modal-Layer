@@ -23,7 +23,7 @@ export class TokyChannelWidgetPopup {
       this.modalStyleClose += '.TokyChannelWidgetPopup-modal-closeBtn {right: 5px; top: 5px; color: black;}';
     }
     this.blackedout = '.TokyChannelWidgetPopup-blackedout { position: absolute; z-index: 1010; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.65); display: none; }';
-    this.blackedoutVisible = `.TokyChannelWidgetPopup-blackedout-visible { display: block; height:${document.body.clientHeight}px }`;
+    this.blackedoutVisible = `.TokyChannelWidgetPopup-blackedout-visible { display: block; height:100% }`;
   }
 
   createModal() {
@@ -64,7 +64,7 @@ export class TokyChannelWidgetPopup {
         ${this.customCss}
       </style>
       <span class="TokyChannelWidgetPopup-modal-closeBtn">${this.closeButtonContent}</span>
-      <div id="TokyChannelWidgetPopup-modal-content">${this.contentHTML}</div>
+      <div id="TokyChannelWidgetPopup-modal-content" style="width:100%;height:100%;">${this.contentHTML}</div>
     `;
   }
 

@@ -14,9 +14,9 @@
 <body>
   <button id="openmodalBtn">Abrir Modal</button>
   <script type="module">
-    import { TokyChannelWidgetPopup } from '../TokyChannelWidgetPopup.js'
+    import { TokyChannelWidgetPopup } from '../ModalLayer.js';
     function onload() {
-      const modalLayer = new TokyChannelWidgetPopup(); 
+      const modalLayer = new TokyChannelWidgetPopup({ width: '800px', height: '70%' }); 
       const openmodalBtn = document.getElementById('openmodalBtn');
       openmodalBtn.onclick = function() {
         modalLayer.styleContent = `
