@@ -1,4 +1,4 @@
-export class ModalLayer {
+export class TokyChannelWidgetPopup {
   constructor(options = {}) {
     this.contentStyle = '';
     this.contentHTML = '';
