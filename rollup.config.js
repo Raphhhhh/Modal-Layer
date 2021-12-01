@@ -7,7 +7,8 @@ export default {
   input: ['ModalLayer.js'],
   output: {
     file: 'dist/ModalLayer.min.js',
-    format: 'es',
+    format: 'iife',
+    name: 'TokyChannelWidgetPopup',
     sourcemap: true,
   },
   plugins: [
